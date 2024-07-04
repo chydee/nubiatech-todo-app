@@ -32,10 +32,21 @@ git clone https://github.com/yourusername/flutter_todo_app.git
 cd flutter_todo_app
 ```
 
-1. **Install dependencies:**
+2**Install dependencies:**
 
+```bash
 flutter pub get
+```
 
-Run the app: flutter run
-Run tests: flutter test
+Run app:
+
+```bash 
+flutter run
+```
+
+Run tests:
+
+```bash 
+flutter test
+```
 
