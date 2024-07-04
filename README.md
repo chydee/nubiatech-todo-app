@@ -16,30 +16,6 @@ A simple To-Do app built with Flutter, using SQLite for local data storage and M
 - **SQLite:** Local database for storing tasks persistently.
 - **MobX:** State management library that makes it simple to connect the reactive data of your application with the UI.
 
-## Project Structure
-
-lutter_todo_app/
-├── android
-├── assets
-├── build
-├── ios
-├── lib
-│ ├── data_source
-│ │ └── database_helper.dart
-│ ├── models
-│ │ └── task.dart
-│ ├── stores
-│ │ └── task_store.dart
-│ ├── ui
-│ │ ├── task_list.dart
-│ │ └── task_form.dart
-│ ├── main.dart
-├── test
-│ ├── database_helper_test.dart
-│ └── task_store_test.dart
-├── pubspec.yaml
-└── README.md
-
 ## Getting Started
 
 ### Prerequisites
