@@ -8,6 +8,7 @@ A simple To-Do app built with Flutter, using SQLite for local data storage and M
 - Mark tasks as done
 - Store tasks in SQLite database
 - Manage state using MobX
+- Delete Task (Long Press to delete)
 
 ## Technologies Used
 
