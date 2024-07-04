@@ -16,13 +16,26 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: const TaskListScreen(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class TaskListScreen extends StatefulWidget {
+  const TaskListScreen({super.key});
+
+  @override
+  _TaskListScreenState createState() => _TaskListScreenState();
+}
+
+class _TaskListScreenState extends State<TaskListScreen> {
   final TaskStore _taskStore = TaskStore();
+
+  @override
+  void initState() {
+    super.initState();
+    _taskStore.fetchTasks(); // Fetch tasks when the screen is initialized
+  }
 
   @override
   Widget build(BuildContext context) {
