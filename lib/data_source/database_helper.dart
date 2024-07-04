@@ -30,7 +30,7 @@ class DatabaseHelper {
 
   Future<int> insertTask(Task task) async {
     Database db = await database;
-    return await db.insert('tasks', task.toMap());
+    return await db.insert('tasks', task.toMap()..remove('id'));
   }
 
   Future<List<Task>> getTasks() async {

@@ -1,16 +1,21 @@
 class Task {
-  int id;
+  int? id;
   String description;
   bool isDone;
 
-  Task({required this.id, required this.description, this.isDone = false});
+  Task({this.id, required this.description, this.isDone = false});
 
   Map<String, dynamic> toMap() {
-    return {
-      'id': id,
+    var map = <String, dynamic>{
       'description': description,
       'isDone': isDone ? 1 : 0,
     };
+
+    if (id != null) {
+      map['id'] = id;
+    }
+
+    return map;
   }
 
   factory Task.fromMap(Map<String, dynamic> map) {
